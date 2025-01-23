@@ -1,0 +1,51 @@
+.DoctorProfile{
+    height: 100%;
+    width: 100%;
+    
+}
+.DoctorProfilePicture img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    
+}
+.DoctorProfilePicture{
+    position: absolute;
+    right: 80px;
+    top: 180px;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(69, 69, 69);
+    background-image: url(../../../../../../data/userProfileDefault.jpg);
+    background-size: 100%;
+    border-radius: 10px;
+    
+}
+
+
+.DoctorDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.DoctorDetails h1{
+    margin: 30px;
+    padding: 15px;
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border-bottom: 4px solid rgb(65, 4, 4);
+}
+
+.DoctorDetailsInfo{
+    margin: 70px;
+    margin-top: 60px;
+    border-bottom: 4px solid rgb(214, 91, 91);
+    padding-bottom: 50px;
+}
+
+.DoctorDetailsInfo h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 22px;
+}

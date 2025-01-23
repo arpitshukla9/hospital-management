@@ -1,0 +1,72 @@
+.DoctorPortal{
+    display: flex;
+    background-color: rgb(180, 180, 180);
+    height: 100vh;
+}
+
+.DoctorMenuBar{
+    top: 15px;
+    right: 15px;
+    width: 25%;
+    position: fixed;
+    background-color: rgb(120, 174, 169);
+    height: 95vh;
+    border-radius: 10px;
+    border: 2px solid rgb(105, 105, 105);
+    box-shadow: 10px 10px 10px rgb(62, 62, 62);
+
+}
+
+.DoctorBar{
+    position: fixed;
+    margin: 15px;
+    box-shadow: 10px 10px 10px rgb(63, 63, 63);
+    width: 71%;
+    border-radius: 10px;
+    overflow: scroll;
+    height: 95vh;
+    border: 2px solid grey;
+    background-color: rgb(190, 148, 137);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.DoctorMenuBar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.DoctorMenuBar h2{
+    color: rgb(2, 15, 65);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.DoctorMenuBarButtons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.DoctorMenuBarButtons button{
+    cursor: pointer;
+    color: rgb(1, 1, 39);
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: 0.3s;
+    border: none;
+    border-bottom: 2px solid rgb(16, 77, 155);
+    background-color: transparent;
+}
+
+.DoctorMenuBarButtons button:hover{
+    color: white;
+    border-bottom: 2px solid rgb(243, 151, 106);
+}

@@ -1,0 +1,58 @@
+
+.AppointmentBookingForm {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .AppointmentBookingForm h2 {
+    text-align: center;
+    color: #200303;
+    font-size: 40px;
+    padding: 10px;
+    border-bottom: 4px solid rgb(55, 3, 3);
+  }
+  
+  .AppointmentForm {
+    width: 400px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .AppointmentBookingForm label {
+    margin-bottom: 8px;
+  }
+  
+  .AppointmentBookingForm input,select {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .AppointmentBookingForm button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .AppointmentBookingForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  .AppointmentBookingForm input:focus{
+    outline: none;
+  }

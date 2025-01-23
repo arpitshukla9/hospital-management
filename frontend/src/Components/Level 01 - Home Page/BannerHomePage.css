@@ -1,0 +1,285 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Appointment Booking Section */
+.main-container {
+    background-color: #323232;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-container,
+.location-container {
+    padding: 15px;
+    flex-basis: 40%;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.search-container input,
+.location-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Reduced the button size */
+.book-appointment-btn {
+    display: block;
+    padding: 8px 15px; /* Smaller padding */
+    font-size: 14px;   /* Smaller font size */
+    background-color: #000000; /* Changed background to black */
+    color: white; /* White text for contrast */
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-appointment-btn:hover {
+    background-color: #333333; /* Lighter shade of black for hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.book-appointment-btn:active {
+    transform: scale(1); /* Reset scaling when active */
+}
+
+/* Banner Home Page */
+.BannerHomePage {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+    z-index: 0;
+}
+
+.BannerHomePage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+    animation: particleMovement 10s infinite alternate;
+}
+
+.BannerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.BannerContent:hover {
+    transform: rotateY(5deg) rotateX(5deg);
+}
+
+.TextSection {
+    width: 50%;
+    color: #e0e0e0;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    background: #DC143C;
+}
+
+.BannerTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00ffff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    animation: glitchTitle 2s infinite alternate;
+}
+
+.BannerText {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #b0b0ff;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards 1s;
+}
+
+.BannerButtonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.BannerButton {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #00ccff, #4a00e0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 204, 255, 0.4);
+}
+
+.BannerButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.5s ease;
+}
+
+.BannerButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 204, 255, 0.6);
+}
+
+.BannerButton:hover::before {
+    left: 100%;
+}
+
+.ImageSection {
+    width: 45%;
+    position: relative;
+}
+
+.BannerImage {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.BannerImage:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+@keyframes particleMovement {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-50px) rotate(15deg); }
+}
+
+@keyframes glitchTitle {
+    0% { transform: skew(0deg); }
+    10% { transform: skew(5deg); }
+    20% { transform: skew(-5deg); }
+    30% { transform: skew(0deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .BannerContent {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .TextSection, .ImageSection {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Emergency Section */
+.emergency-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    background-color: #fb0101;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+.emergency-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #ff6f61; /* Change this to any background color you prefer */
+    color: white; /* Change the text color */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.emergency-button:hover {
+    background-color: #e04e46; /* Adjusted hover background color */
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex-basis: 20%;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section li {
+    margin-bottom: 5px;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

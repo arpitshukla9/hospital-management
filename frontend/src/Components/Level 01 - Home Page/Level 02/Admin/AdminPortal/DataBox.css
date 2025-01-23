@@ -1,0 +1,25 @@
+.DataBox{
+    width: 270px;
+    height: 270px;
+    background-color: rgb(104, 149, 169);
+    border-radius: 5px;
+    margin: 20px;
+    border: 2px solid rgb(95, 95, 167);
+    
+}
+
+.DataBox h2{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.DataBox h3{
+    font-size: 45px;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    color: rgb(119, 8, 8);  
+}

@@ -1,0 +1,55 @@
+.ReviewBox{
+    background-color: rgb(54, 54, 54);
+    margin: 30px;
+    height: 80%;
+    border-radius: 15px;
+    color: white;
+    max-width: 300px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 10px 10px 10px rgb(107, 107, 107);
+
+}
+
+.RatingAndName{
+    display: flex;
+    flex-direction: column;
+}
+.ReviewerInfo{
+    height: 100px;
+    display: flex;
+    height: 60px;
+    margin: 15px;
+    border-bottom: 2px solid white;
+}
+
+.ReviewerInfo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.ReviewerReview{
+    height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.ReviewerReview p{
+    text-align: center;
+    margin: 20px;
+    font-size: 14px;
+}
+
+.ReviewerInfo h2{
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+}
+
+.ReviewBox:hover{
+    background-color: rgb(137, 137, 137);
+    color: rgb(24, 24, 24);
+    transform: scale(1.05);
+}
